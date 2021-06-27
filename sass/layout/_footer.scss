@@ -1,0 +1,106 @@
+.footer {
+  background-color: var(--dark-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &-headline {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+  }
+  &-container {
+    display: flex;
+    align-items: baseline;
+  }
+  &-social {
+    margin-left: 70px;
+  }
+  &-form {
+    margin-left: 93px;
+  }
+}
+
+.logo-footer {
+  color: var(--white-color);
+  padding: 0;
+}
+
+.footer-list-icon {
+  padding: 12px 12px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--white-color);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer-list {
+  display: flex;
+  &-mail:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-icon-li {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer {
+  .link {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
+  .address {
+    color: var(--white-color);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+  .link:focus,
+  .link:hover {
+    color: var(--accent-color);
+    transition: var(--time-animation);
+  }
+}
+
+.form-subscribe {
+  display: flex;
+}
+
+.footer {
+  &-input {
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 358px;
+    background-color: var(--dark-background-color);
+    padding: 15px 16px;
+  }
+  &-form-icon {
+    margin-left: 10px;
+  }
+}

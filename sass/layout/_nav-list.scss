@@ -1,0 +1,64 @@
+.container .nav {
+  display: flex;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+  transition: var(--time-animation);
+}
+.head-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.head-link {
+  display: flex;
+  align-items: center;
+}
+
+.header .link {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: var(--time-animation);
+}
+
+.list.nav-list,
+.list.aside {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  justify-content: space-between;
+  transition: var(--time-animation);
+}
+
+.list.nav-list {
+  color: inherit;
+  width: 294px;
+}
+.list.aside {
+  color: var(--title-text-color);
+}
+
+.aside-mail:not(:last-child) {
+  margin-right: 50px;
+}
+.link.current {
+  color: var(--accent-color);
+}
+
+.link.current::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  background: var(--accent-color);
+  border-radius: 2px;
+  height: 4px;
+  bottom: -1px;
+}
