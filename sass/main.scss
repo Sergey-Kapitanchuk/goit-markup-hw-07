@@ -1,10 +1,15 @@
 @import './vendor/normalize';
+
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/placeholders';
+
 @import './base/container';
 @import './base/common';
 @import './base/section';
+
 @import './components/button';
+
 @import './layout/header';
 @import './layout/logo';
 @import './layout/nav-list';

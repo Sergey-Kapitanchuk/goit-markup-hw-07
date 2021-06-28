@@ -1,6 +1,5 @@
 .client-list {
-  display: flex;
-  justify-content: center;
+  @extend %justify;
   margin-top: 50px;
   &-icon:not(:last-child) {
     margin-right: 30px;
@@ -11,9 +10,8 @@
   }
 }
 .client-link {
-  display: flex;
+  @extend %flex-align;
   justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   border: 1px solid #afb1b8;

@@ -25,8 +25,7 @@
   }
   &-title {
     text-align: center;
-    font-family: inherit;
-    font-style: normal;
+    @extend %inherit;
     font-weight: bold;
     font-size: 20px;
     line-height: 1.15;
@@ -68,8 +67,7 @@
   display: flex;
   flex-direction: column;
   &-text {
-    font-family: inherit;
-    font-style: normal;
+    @extend %inherit;
     font-weight: normal;
     font-size: 12px;
     line-height: 1.166;
@@ -98,8 +96,7 @@
   }
   &-agree {
     position: relative;
-    font-family: inherit;
-    font-style: normal;
+    @extend %inherit;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.714;
@@ -121,8 +118,7 @@
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &::placeholder {
-    font-family: inherit;
-    font-style: normal;
+    @extend %inherit;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.142;

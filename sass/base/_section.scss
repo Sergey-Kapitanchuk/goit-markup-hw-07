@@ -1,6 +1,5 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @extend %padding;
   &.portfolio {
     background-color: var(--grey-background-color);
   }
