@@ -1,6 +1,5 @@
 .logo {
-  &,
-  &-footer {
+  & {
     font-family: 'Raleway', sans-serif;
     color: var(--primary-text-color);
     font-weight: bold;
@@ -12,8 +11,11 @@
     padding-top: 24px;
     padding-bottom: 25px;
   }
-  .web,
-  &-footer .web {
+  .web {
     color: var(--accent-color);
+  }
+  &__footer {
+    color: var(--white-color);
+    padding: 0;
   }
 }

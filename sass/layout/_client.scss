@@ -1,15 +1,17 @@
-.client-list {
-  @extend %justify;
-  margin-top: 50px;
-  &-icon:not(:last-child) {
+.client {
+  &__list {
+    @extend %justify;
+    margin-top: 50px;
+  }
+  &__icon:not(:last-child) {
     margin-right: 30px;
   }
-  &-icon {
+  &__icon {
     width: 170px;
     height: 92px;
   }
 }
-.client-link {
+.client__link {
   @extend %flex-align;
   justify-content: center;
   width: 100%;

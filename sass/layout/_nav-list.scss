@@ -1,17 +1,9 @@
 .nav {
   display: flex;
-}
-
-.link {
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-    transition: var(--time-animation);
-  }
-  &.current {
+  &--current {
     color: var(--accent-color);
   }
-  &.current::after {
+  &--current::after {
     display: block;
     content: '';
     position: absolute;
@@ -23,13 +15,24 @@
   }
 }
 
-.head {
-  &-icon {
+.link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: var(--time-animation);
+  }
+}
+
+.aside {
+  &__icon {
     margin-right: 10px;
     fill: currentColor;
   }
-  &-link {
+  &__link {
     @extend %flex-align;
+  }
+  &__mail:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -43,7 +46,7 @@
 }
 
 .list {
-  &.nav-list,
+  &.nav__list,
   &.aside {
     @extend %flex-align;
     font-style: normal;
@@ -54,17 +57,11 @@
     justify-content: space-between;
     transition: var(--time-animation);
   }
-  &.nav-list {
+  &.nav__list {
     color: inherit;
     width: 294px;
   }
   &.aside {
     color: var(--title-text-color);
-  }
-}
-
-.aside-mail {
-  &:not(:last-child) {
-    margin-right: 50px;
   }
 }

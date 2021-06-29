@@ -1,11 +1,11 @@
 .principles {
-  &-list {
+  &__list {
     @extend %justify;
   }
-  &-list-info:not(:last-child) {
+  &__info:not(:last-child) {
     margin-right: 30px;
   }
-  &-decor-icon {
+  &__icon--decor {
     @extend %flex-align;
     background: var(--grey-background-color);
     border-radius: 4px;
@@ -14,24 +14,23 @@
     height: 120px;
     justify-content: center;
   }
-}
-
-.list-subtitle {
-  color: inherit;
-  font-weight: bold;
-  line-height: 1.142;
-  text-transform: uppercase;
-  &,
-  &-text {
-    width: 270px;
-    letter-spacing: 0.03em;
-    font-size: 14px;
-    @extend %inherit;
+  &__subtitle {
+    color: inherit;
+    font-weight: bold;
+    line-height: 1.142;
+    text-transform: uppercase;
   }
-  &-text {
+  &__text {
     color: var(--title-text-color);
     font-weight: normal;
     line-height: 1.714;
     padding-top: 10px;
+  }
+  &__subtitle,
+  &__text {
+    width: 270px;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    @extend %inherit;
   }
 }

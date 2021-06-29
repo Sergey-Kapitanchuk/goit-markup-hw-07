@@ -1,5 +1,5 @@
-.headline {
-  & {
+.working {
+  &__headline {
     @extend %text;
     font-weight: bold;
     font-size: 36px;
@@ -8,25 +8,23 @@
     letter-spacing: 0.03em;
     margin-bottom: 50px;
   }
-}
-
-.working-list {
-  @extend %justify;
-  &-img {
+  &__list {
+    @extend %justify;
+  }
+  &__img {
     position: relative;
   }
-  &-img:not(:last-child) {
+  &__img:not(:last-child) {
     margin-right: 30px;
   }
-}
-
-.list-meta {
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  bottom: 0;
-  z-index: 1;
-  &-text {
+  &__meta {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    z-index: 1;
+  }
+  &__text {
     color: var(--white-color);
     @extend %inherit;
     font-weight: bold;
